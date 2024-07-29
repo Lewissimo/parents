@@ -21,7 +21,7 @@
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
   );
-
+  
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
   --tile-border: conic-gradient(
@@ -38,6 +38,40 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+/* components/Heart.module.css */
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  clip-path: polygon(50% 0%, 100% 35%, 75% 100%, 25% 100%, 0% 35%);
+  transition: width 0.1s ease, height 0.1s ease;
+  cursor: pointer;
+}
+
+
+/* components/ProgressBar.module.css */
+.progressBarContainer {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: red;
+  transition: width 0.1s ease;
+}
+
+@keyframes showBrawa {
+    from{
+      opacity: 0;
+      transform: translateY(400px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
 }
 
 @media (prefers-color-scheme: dark) {

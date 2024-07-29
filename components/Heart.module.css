@@ -1,0 +1,8 @@
+/* components/Heart.module.css */
+.heart {
+    width: 100px;
+    height: 100px;
+    transition: width 0.1s ease, height 0.1s ease;
+    cursor: pointer;
+  }
+  

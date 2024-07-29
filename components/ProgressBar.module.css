@@ -1,0 +1,13 @@
+/* components/ProgressBar.module.css */
+.progressBarContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+  }
+  
+  .progressBar {
+    height: 100%;
+    background-color: red;
+    transition: width 0.1s ease;
+  }
+  
